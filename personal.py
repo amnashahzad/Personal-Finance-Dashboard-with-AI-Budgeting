@@ -8,11 +8,11 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import classification_report
 
 def load_budget():
-    budget = pd.read_csv(r'C:\Users\Naveed Computers\OneDrive\Desktop\strem lit\New folder\Budget.csv')
+    budget = pd.read_csv(r'/workspaces/Personal-Finance-Dashboard-with-AI-Budgeting/Budget.csv')
     return budget
 
 def load_transactions():
-    transactions = pd.read_csv(r'C:\Users\Naveed Computers\OneDrive\Desktop\strem lit\New folder\personal_transactions.csv')
+    transactions = pd.read_csv(r'/workspaces/Personal-Finance-Dashboard-with-AI-Budgeting/personal_transactions.csv')
     transactions['Date'] = pd.to_datetime(transactions['Date'], format='%m/%d/%Y')
     return transactions
 
